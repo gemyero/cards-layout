@@ -24,12 +24,12 @@ main {
 
 aside {
   background-color: rgb(5, 170, 170);
-  width: 7%;
+  width: 100px;
   transition: all .3s ease-in-out;
 }
 
 aside:hover {
-  width: 30%;
+  width: 800px;
 }
 
 aside:hover h1 {
@@ -49,8 +49,7 @@ aside:hover h1 {
 .sidebar-header h1 {
   color: white;
   font-size: 2.3em;
-  width: 6em;
-  padding: 1em 0;
+  padding: 1em;
   opacity: 0;
   transition: opacity .3s ease-in-out;
 }
@@ -177,4 +176,10 @@ header .logout:hover {
 
 .container {
   overflow-y: hidden;
+}
+
+@media all and (max-width: 400px) {
+  aside {
+    display: none;
+  }
 }
